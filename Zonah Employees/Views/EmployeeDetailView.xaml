@@ -1,0 +1,271 @@
+﻿<UserControl x:Class="Zonah_Employees.Views.EmployeeDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:c="clr-namespace:Zonah_Employees.Converter"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Zonah_Employees.Views"
+             mc:Ignorable="d" 
+             
+             Height="550" Width="900" MaxHeight="550" MaxWidth="900" Background="White">
+
+    <Grid>
+
+        <Grid.Resources>
+            <c:NulltoVisibilityConverter x:Key="ntvc"/>
+        </Grid.Resources>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Part 1-->
+
+        <Grid Grid.Column="1" Margin="10" VerticalAlignment="Top" Height="200" Width="180" >
+            <Button Height="200" Width="180" Command="{Binding AddEmployeeImage}" Visibility="{Binding ImageSource, Converter={StaticResource ntvc}}">
+                <Image/>
+            </Button>
+            <Image Height="200" Width="180" Source="{Binding ImageSource}">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Visibility" Value="Visible"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ImageSource}" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </Grid>
+
+        <!-- TODO: Bind the background color to the parent color-->
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Bottom" Background="White">
+            <Button Command="{Binding AddEmployee}" x:Name="addbtn"  Content="Add" Margin="5" />
+            <Button Command="{Binding UpdateEmployee}" x:Name="updatebtn"  Content="Update" Margin="5" />
+            <Button Command="{Binding DeleteEmployee}" x:Name="deletebtn" Content="Delete" Margin="5"/>
+        </StackPanel>
+
+        <!-- TODO : verify to save changes-->
+        <!-- TODO : shared size for height-->
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Top" Background="White" Height="90" Margin="0,372,0,0" Grid.RowSpan="2">
+            <Button Command="{Binding SaveChanges}" x:Name="savebtn"  Content="Save Changes" Margin="5" />
+            <Button Command="{Binding CancelChanges}" x:Name="cancelbtn"  Content="Cancel" Margin="5" />
+        </StackPanel>
+
+
+        <!--Part 2-->
+
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Employee ID"/>
+            <TextBox x:Name="id" Grid.Row="0" Grid.Column="1" Margin="5" IsEnabled="False" Text="{Binding EmployeeID}" />
+
+            <Label Grid.Row="0" Grid.Column="2" Content="FullName"/>
+            <TextBox x:Name="name" Grid.Row="0" Grid.Column="3" Margin="5" Text="{Binding EmployeeName, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Branch"/>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <ComboBox x:Name="br" Width="165" Margin="5" Text="{Binding Branch, UpdateSourceTrigger=PropertyChanged}" />
+                <Button x:Name="addbr" Height="21.96" Padding="3" Content="Add Branch" />
+            </StackPanel>  
+
+            <Label Grid.Row="1" Grid.Column="2" Content="Position"/>
+            <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Horizontal">
+                <ComboBox x:Name="pos" Width="159" Margin="5" Text="{Binding Position, UpdateSourceTrigger=PropertyChanged}" />
+                <Button x:Name="addpos" Height="21.96" Padding="3" Content="Add Position" />
+            </StackPanel>
+
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Email"/>
+            <TextBox x:Name="eml" Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Grid.Row="2" Grid.Column="2" Content="Phone Number"/>
+            <TextBox x:Name="pnum" Grid.Row="2" Grid.Column="3" Margin="5" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Address"/>
+            <TextBox x:Name="ad" Grid.Row="3" Grid.Column="1" Margin="5" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Grid.Row="3" Grid.Column="2" Content="Alternate Number"/>
+            <TextBox x:Name="anum" Grid.Row="3" Grid.Column="3" Margin="5" Text="{Binding AlternateNumber, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Grid.Row="4" Grid.ColumnSpan="4" Content="WORK INFORMATION" BorderBrush="#FF5A5A5A" BorderThickness="1" HorizontalContentAlignment="Center"/>
+
+            <Grid Grid.Row="5" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label   Grid.Row="0" Grid.Column="0" Content="Shift Start's @ " Margin="0,0,13,0"/>
+                <TextBox x:Name="st" Grid.Row="0" Grid.Column="1" Margin="5" MinWidth="100" HorizontalAlignment="Stretch" Text="{Binding ShiftStart}" />
+
+                <Label   Grid.Row="0" Grid.Column="2" Content="Shift End's @ "/>
+                <TextBox x:Name="et" Grid.Row="0" Grid.Column="3" Margin="5" MinWidth="100" Text="{Binding ShiftEnd}" />
+
+                <Label   Grid.Row="0" Grid.Column="4" Content="Total Time"/>
+                <TextBox x:Name="tt" Grid.Row="0" Grid.Column="5" Margin="5" MinWidth="100" Text="{Binding TotalTime}" />
+
+                <Label   Grid.Row="1" Grid.Column="0" Content="Date"/>
+                <DatePicker x:Name="dt" Grid.Row="1" Grid.Column="1" Margin="5" MinWidth="100"/>
+
+                <Label   Grid.Row="1" Grid.Column="2" Content="Shift Type"/>
+                <ComboBox x:Name="sft" Grid.Row="1" Grid.Column="3"  Margin="5" MinWidth="100">
+                    <ComboBoxItem>DAY</ComboBoxItem>
+                    <ComboBoxItem>EVENING</ComboBoxItem>
+                </ComboBox>
+
+                <Button x:Name="ausftbtn" Grid.Row="1" Grid.Column="4" Margin="5" Grid.ColumnSpan="2" Content="ADD/UPDATE SHIFT"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Content="Notes"/>
+                <TextBox x:Name="nts" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Margin="5" Height="90" Text="{Binding Notes}" />
+
+
+                <Label   Grid.Row="3" Grid.Column="0" Content="Leaves" Margin="0,0,13,0"/>
+                <TextBox x:Name="lvs" Grid.Row="3" Grid.Column="1" Margin="5" MinWidth="100" HorizontalAlignment="Stretch" Text="{Binding Leaves}" />
+
+                <Label   Grid.Row="3" Grid.Column="2" Content="Emergency Leave"/>
+                <TextBox x:Name="elvs" Grid.Row="3" Grid.Column="3" Margin="5" MinWidth="100" Text="{Binding EmergencyLeaves}"/>
+
+                <Label   Grid.Row="3" Grid.Column="4" Content="Status"/>
+                <ComboBox x:Name="stus" Grid.Row="3" Grid.Column="5"  Margin="5" MinWidth="100">
+                    <ComboBoxItem>EMPLOYED</ComboBoxItem>
+                    <ComboBoxItem>TERMINATED</ComboBoxItem>
+                </ComboBox>
+
+
+                <!--// Daily work Info //-->
+
+                <Label Grid.Row="4" Grid.ColumnSpan="6" Content="DAILY ACTIVITY" BorderBrush="#FF5A5A5A" BorderThickness="1" HorizontalContentAlignment="Center"/>
+
+
+                <Label   Grid.Row="5" Grid.Column="0" Content="Login Time"/>
+                <TextBox x:Name="lt" Grid.Row="5" Grid.Column="1" Margin="5" MinWidth="100" HorizontalAlignment="Stretch"  Text="{Binding X}" />
+
+                <Label   Grid.Row="5" Grid.Column="2" Content="Logout Time"/>
+                <TextBox x:Name="lot" Grid.Row="5" Grid.Column="3" Margin="5" MinWidth="100"  Text="{Binding X}" />
+
+                <Label   Grid.Row="5" Grid.Column="4" Content="Totoal Time/Month"/>
+                <TextBox x:Name="ttm" Grid.Row="5" Grid.Column="5" Margin="5" MinWidth="100"  Text="{Binding X}" />
+
+
+            </Grid>
+
+            <Button x:Name="sbtn" Grid.Row="7" Grid.Column="1" Margin="5" Content="Start"/>
+            <Button x:Name="sobtn" Grid.Row="7" Grid.Column="3" Margin="5" Content="Stop"/>
+
+            <Label Grid.Row="8" Grid.Column="0" Content="Timer"/>
+            <TextBlock Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" Margin="5" Name="timerText" Text="{Binding X}" />
+
+            <Label Grid.Row="8" Grid.Column="2" Content="OverTime"/>
+            <TextBlock Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="3" Margin="5" Name="OtimeText" Text="{Binding X}" />
+
+        </Grid>
+
+
+        <!--Part 3-->
+
+        <ListView Grid.Row="1" Grid.ColumnSpan="2" Margin="10" ItemsSource="{Binding WorkingEmployee}">
+
+            <ListView.View>
+                <GridView>
+
+                    <GridViewColumn Header="Employee ID">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding EMid}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    
+                    <GridViewColumn Header="Employee Name">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding EmployeeName}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    
+                    <GridViewColumn Header="Leave">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Leave}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                                       
+                    
+                    <GridViewColumn Header="Login Time">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding LoginTime}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    
+                    <GridViewColumn Header="Logout Time">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding LogoutTime}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    
+                    <GridViewColumn Header="Date">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding LogoutTime}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+
+    </Grid>
+    
+    
+    
+</UserControl>

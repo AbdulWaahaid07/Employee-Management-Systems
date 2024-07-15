@@ -1,0 +1,45 @@
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.exe
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.deps.json
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.runtimeconfig.json
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.pdb
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.csproj.AssemblyReference.cache
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees_MarkupCompile.cache
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees_MarkupCompile.lref
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.g.resources
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.AssemblyInfoInputs.cache
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.AssemblyInfo.cs
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.csproj.CoreCompileInputs.cache
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\refint\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.pdb
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.genruntimeconfig.cache
+C:\Users\waaha\source\repos\Zonah Employees\Zonah Employees\obj\Debug\net7.0-windows\ref\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.exe
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.deps.json
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.runtimeconfig.json
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\bin\Debug\net7.0-windows\Zonah Employees.pdb
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.csproj.AssemblyReference.cache
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Views\EmployeeDetailView.g.cs
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees_MarkupCompile.cache
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees_MarkupCompile.lref
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Views\EmployeeDetailView.baml
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.g.resources
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.AssemblyInfoInputs.cache
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.AssemblyInfo.cs
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.csproj.CoreCompileInputs.cache
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\refint\Zonah Employees.dll
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.pdb
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\Zonah Employees.genruntimeconfig.cache
+C:\Users\waaha\source\repos\Zonah Employees Updated\Zonah Employees\obj\Debug\net7.0-windows\ref\Zonah Employees.dll
